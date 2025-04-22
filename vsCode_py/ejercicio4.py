@@ -59,7 +59,7 @@ def calcularFactura(mtsConsumidos, tipoCliente):
     }
 
     for nombre, valor in factura.items():
-        print(f"{nombre}: $ {valor}")
+        print(f"{nombre}: $ {"%.1f" % valor}")
 
 mtsConsumido = input("Ingresá la cantidad consumida de agua (en m3): ")
 cliente = input("Ingresá que tipo de cliente sos (Residencial, Comercial o Industrial): ")
